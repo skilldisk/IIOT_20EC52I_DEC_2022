@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>IIOT - Session 2 - Skill Disk</title>
+
+  <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+  <meta name="author" content="Hakim El Hattab">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="libs/reveal.js/4.3.1/reset.css">
+  <link rel="stylesheet" href="libs/reveal.js/4.3.1/reveal.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <!-- highlight Theme -->
+  
+  <link rel="stylesheet" href="libs/highlight.js/11.3.1/styles/Stackoverflow-Dark.min.css">
+  
+	
+		
+	<link rel="stylesheet" href="libs/reveal.js/4.3.1/plugin/chalkboard/style.css">
+	
+	
+	
+	
+
+
+
+  <!-- Revealjs Theme -->
+  
+  <link rel="stylesheet" href="libs/reveal.js/4.3.1/theme/night.css" id="theme">
+  
+  
+
+  <link rel="stylesheet" href="libs/styles/tasklist.css">
+	<link rel="stylesheet" href="libs/styles/iota.css">
+	<link rel="stylesheet" href="libs/styles/layout.css">
+
+
+  <!-- Revealjs Theme -->
+  
+  <link rel="stylesheet" href="skill_style.css">
+  
+
+   <!-- css list -->
+	
+
+   
+
+</head>
+
+<body>
+
+   
+    <div id="logo" style="position: fixed; top: 20px; left: 20px; z-index: 1; height:3rem;">
+        <img src="./image/logo.png" style="height:100%"/>
+    </div>
+
+
+  <div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+
+      
+
+
+    
+        <section >
+            
+            <p><img src="./image/iot.png" alt="IOT"></p>
+<h2>Industrial Internet Of Things</h2>
+
+            </section>
+    
+
+
+
+    
+        <section style="text-align: left;">
+            
+            <!-- .slide: style="text-align: left;" -->
+<h2>Contents</h2>
+<ul>
+<li>IOT Communication Protocol.</li>
+<li>Thingspeak.</li>
+<li>JSON.</li>
+<li>Coding &amp; Demo.</li>
+<li>Project Ideas.</li>
+<li>Queries.</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+    <section>
+        <section >
+            <h1 class="r-fit-text">Communication Protocol.</h1>
+
+            </section>
+        
+            <section style="text-align: left;">
+                <!-- .slide: style="text-align: left;" -->
+<ul class="fragment fade-in">
+<li>HTTP</li>
+<li>MQTT</li>
+<li>CoAP</li>
+</ul>
+
+            </section>
+        
+            <section >
+                <h1 class="logo-text">HTTP</h1>
+<ul>
+<li class="fragment fade-in">Hyper Text Transfer Protocol</li>
+<li class="fragment fade-in">Transmission Control Protocol (TCP)</li>
+<li class="fragment fade-in">client server (request-response) model</li>
+<li class="fragment fade-in">Secured and Large chunk of data</li>
+</ul>
+
+            </section>
+        
+            <section >
+                <h1 class="logo-text">MQTT</h1>
+<ul>
+<li class="fragment fade-in">Message Queuing Telemetry Transport</li>
+<li class="fragment fade-in">Transmission Control Protocol (TCP)</li>
+<li class="fragment fade-in">publish subscriber model</li>
+<li class="fragment fade-in">Asynchronous</li>
+<li class="fragment fade-in">low power consumption.</li>
+</ul>
+
+            </section>
+        
+            <section >
+                <h1 class="logo-text">CoAP</h1>
+<ul>
+<li class="fragment fade-in">Constrained Application Protocol</li>
+<li class="fragment fade-in">User Datagram protocol(UDP)</li>
+<li class="fragment fade-in">Asynchronous and Synchronous</li>
+<li class="fragment fade-in">client server (request-response) model</li>
+</ul>
+
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+    <section>
+        <section >
+            <h1 class="r-fit-text">Thingspeak.</h1>
+
+            </section>
+        
+            <section >
+                <ul>
+<li class="fragment fade-up">MathWorks.</li>
+<li class="fragment fade-up">Data analysis using MATLAB.</li>
+<li class="fragment fade-up">HTTP.</li>
+<li class="fragment fade-up">15 sec interval between each data for free account.</li>
+</ul>
+
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+    <section>
+        <section >
+            <h1 class="r-fit-text">JSON</h1>
+<p class="fragment fade-up">JavaScript Object Notation</p>
+
+            </section>
+        
+            <section >
+                <pre><code class="language-json">{
+    channel: {
+    id: 1234567,
+    name: &quot;IOT Platform&quot;,
+    description: &quot;Description of project&quot;,
+    latitude: &quot;0.0&quot;,
+    longitude: &quot;0.0&quot;,
+    field1: &quot;temperature&quot;,
+    field2: &quot;voltage&quot;,
+    created_at: &quot;2022-07-16T08:30:17Z&quot;,
+    updated_at: &quot;2022-09-01T05:03:31Z&quot;,
+    last_entry_id: 137
+    },
+    feeds: [
+        {
+    created_at: &quot;2022-12-07T10:11:34Z&quot;,
+    entry_id: 136,
+    field1: &quot;2.45566&quot;
+        },
+        {
+    created_at: &quot;2022-12-07T10:11:53Z&quot;,
+    entry_id: 137,
+    field1: &quot;2.45244&quot;
+        }
+    ]
+}
+
+</code></pre>
+
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+    <section>
+        <section >
+            <h1 class="r-fit-text">Coding &amp; Demo</h1>
+
+            </section>
+        
+            <section >
+                <ol>
+<li>Configuring NodeMCU for MicroPython.</li>
+<li>Blinking a LED.</li>
+<li>Connecting mc to wifi.</li>
+<li>Write data to Thingspeak using write API.</li>
+<li>Sending RealTime data to Thingspeak.</li>
+</ol>
+
+            </section>
+        
+            <section >
+                <h2>Blink Built-in LED of NodeMCU ESP8266.</h2>
+<pre><code class="language-python">
+from machine import Pin
+import utime
+
+# Pin 2 is connected for Built-in LED
+led = Pin(2, Pin.OUT)
+
+while True:
+
+    # Turn on LED for 1 sec
+    led.value(0)
+    utime.sleep_ms(1000)
+
+    # Turn off LED for 1 sec
+    led.value(1)
+    utime.sleep_ms(1000)
+
+</code></pre>
+
+            </section>
+        
+            <section >
+                <h2>Connecting NodeMCU to Wifi</h2>
+<pre><code class="language-python">
+ssid = &quot;ssid&quot;
+password = &quot;password&quot;
+
+def do_connect():
+    import network
+    wlan = network.WLAN(network.STA_IF)
+    wlan.active(True)
+    if not wlan.isconnected():
+        print('connecting to network...')
+        wlan.connect(ssid, password)
+        while not wlan.isconnected():
+            pass
+    print('network config:', wlan.ifconfig())
+
+do_connect()
+</code></pre>
+
+            </section>
+        
+            <section >
+                <h2>Sending data to Thingspeak account.</h2>
+<pre><code class="language-python">def do_connect(ssid, password):
+    import network
+    sta_if = network.WLAN(network.STA_IF)
+    if not sta_if.isconnected():
+        print('connecting to network...')
+        sta_if.active(True)
+        sta_if.connect(ssid, password)
+        while not sta_if.isconnected():
+            pass
+    print('network config:', sta_if.ifconfig())
+
+
+def thingspeak_write_data(api_key, value):
+    import socket
+    
+    host = &quot;api.thingspeak.com&quot;
+    path = f&quot;update?api_key={api_key}&amp;field1={value}&quot;
+    
+    #_, _, host, path = url.split('/', 3)
+    addr = socket.getaddrinfo(host, 80)[0][-1]
+    s = socket.socket()
+    s.connect(addr)
+    s.send(bytes('GET /%s HTTP/1.0\r\nHost: %s\r\n\r\n' % (path, host), 'utf8'))
+    while True:
+        data = s.recv(100)
+        if data:
+            print(str(data, 'utf8'), end='')
+        else:
+            break
+    s.close()
+    
+api_key = &quot;8FLKPPNP64E____&quot; # Replace with write api key.
+ssid = &quot;ssid&quot; # replace with ssid of wifi.
+password = &quot;password&quot; # replace with password of wifi.
+value = 10 # value to be sent to account.
+
+do_connect(ssid, password)
+
+thingspeak_write_data(api_key, value)
+
+</code></pre>
+
+            </section>
+        
+            <section >
+                <h2>Sending realtime data to Thingspeak account.</h2>
+<pre><code class="language-python">def do_connect(ssid, password):
+    import network
+    sta_if = network.WLAN(network.STA_IF)
+    if not sta_if.isconnected():
+        print('connecting to network...')
+        sta_if.active(True)
+        sta_if.connect(ssid, password)
+        while not sta_if.isconnected():
+            pass
+    print('network config:', sta_if.ifconfig())
+
+
+def thingspeak_write_data(api_key, value):
+    import socket
+    
+    host = &quot;api.thingspeak.com&quot;
+    path = f&quot;update?api_key={api_key}&amp;field1={value}&quot;
+    
+    #_, _, host, path = url.split('/', 3)
+    addr = socket.getaddrinfo(host, 80)[0][-1]
+    s = socket.socket()
+    s.connect(addr)
+    s.send(bytes('GET /%s HTTP/1.0\r\nHost: %s\r\n\r\n' % (path, host), 'utf8'))
+    while True:
+        data = s.recv(100)
+        if data:
+            print(str(data, 'utf8'), end='')
+        else:
+            break
+    s.close()
+    
+api_key = &quot;8FLKPPNP64E____&quot; # Replace with write api key.
+ssid = &quot;ssid&quot; # replace with ssid of wifi.
+password = &quot;password&quot; # replace with password of wifi.
+
+do_connect(ssid, password)
+
+from machine import ADC
+import utime
+
+pot = ADC(0)
+
+while True:
+
+    pot_value = pot.read()
+    # print(&quot;POT Value = &quot;, pot_value)
+    
+    # conversion of adc to voltage.
+    voltage = (pot_value / 1024) * 3.3
+
+    thingspeak_write_data(api_key, voltage)
+
+    utime.sleep_ms(18000)
+
+</code></pre>
+
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+        <section >
+            
+            <h1 class="r-fit-text">Project Ideas</h1>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h1 class="logo-text r-fit-text">Any Queries ?</h1>
+
+            </section>
+    
+
+
+    </div>
+
+
+  </div>
+
+  <div class="line top"></div>
+  <div class="line bottom"></div>
+  <div class="line left"></div>
+  <div class="line right"></div>
+
+  <script src="libs/reveal.js/4.3.1/reveal.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/notes/notes.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/markdown/markdown.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/highlight/highlight.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/math/math.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/fullscreen/plugin.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/animate/plugin.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/animate/svg.min.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/anything/plugin.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/anything/Chart.min.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/anything/d3/d3.v3.min.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/anything/d3.patch.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/anything/d3/queue.v1.min.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/anything/d3/topojson.v1.min.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/anything/function-plot.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/customcontrols/plugin.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/embed-tweet/plugin.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/chart/chart.min.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/chart/plugin.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/verticator/verticator.js"></script>
+
+<script src="libs/reveal.js/4.3.1/plugin/zoom/zoom.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/search/search.js"></script>
+
+<script src="libs/reveal.js/4.3.1/plugin/chalkboard/plugin.js"></script>
+
+<!--	<script src="libs/reveal.js/4.3.1/plugin/audio-slideshow/plugin.js"></script>  -->
+<!--	<script src="libs/reveal.js/4.3.1/plugin/audio-slideshow/recorder.js"></script>-->
+<!--	<script src="libs/reveal.js/4.3.1/plugin/audio-slideshow/RecordRTC.js"></script>-->
+
+  
+
+<script>
+  const printPlugins = [
+      RevealNotes,
+      RevealHighlight,
+      RevealMath.MathJax3,
+      RevealAnimate,
+      RevealChalkboard, 
+			RevealEmbedTweet,
+			RevealChart,
+		];
+
+		const plugins =  [...printPlugins,
+		RevealZoom, 
+		RevealSearch, 
+				RevealMarkdown, 
+				
+				RevealFullscreen,
+				RevealAnything,
+				//RevealAudioSlideshow,
+				//RevealAudioRecorder,
+				
+				// poll
+				// question
+				// seminar
+				Verticator 
+				 ]
+
+
+		// Also available as an ES module, see:
+		// https://revealjs.com/initialization/
+		Reveal.initialize({
+			controls: true,
+      controlsTutorial: true,
+      controlsLayout: 'bottom-right',
+      controlsBackArrows: 'faded',
+      progress: true,
+      slideNumber: false,
+      //#showSlideNumber "all" "print" "speaker"
+      hash: true, //# hash: false,
+      //# respondToHashChanges: true,
+      //# history: false,
+      keyboard: true,
+      //#keyboardCondition: null,
+      overview: true,
+      center: true,
+      touch: true,
+      loop: false,
+      rtl: false,
+      //#navigationMode: 'default', linear grid
+      shuffle: false,
+      fragments: true,
+      fragmentInURL: false,
+      embedded: false,
+      help: true,
+      //#pause: true
+      showNotes: false,
+      autoPlayMedia: false, // TODO fix this to a nullable value
+      //#preloadIframes: null. true false
+      //#autoAnimate: true
+      //#autoAnimateMatcher: null,
+      //#autoAnimateEasing: 'ease',
+      //autoAnimateDuration: 1.0,
+      //#autoAnimateUnmatched: true
+      //#autoAnimateStyles: []
+      autoSlide: 0, // TODO fix this to a falseable value
+      autoSlideStoppable: true,
+      autoSlideMethod: '0',
+      defaultTiming: 120,
+      mouseWheel: false,
+      //#previewLinks: false
+      //#postMessage: true, // TODO : this can cause issues with the vscode api ???
+      //#postMessageEvents: false,
+      //#focusBodyOnPageVisibilityChange: true,
+      transition: 'fade',
+      transitionSpeed: 'default',
+      backgroundTransition: 'fade',
+      //#pdfMaxPagesPerSlide: Number.POSITIVE_INFINITY,
+      //#pdfSeparateFragments: true,
+      //#pdfPageHeightOffset: -1,
+      viewDistance: 3,
+      //#mobileViewDistance: 2,
+      display: 'block',
+      //#hideInactiveCursor: true,
+      //#hideCursorTime: 5000
+
+      // Parallax Background
+      parallaxBackgroundImage: '',
+      parallaxBackgroundSize: '',
+      parallaxBackgroundHorizontal: 0,
+      parallaxBackgroundVertical: 0,
+
+      //Presentation Size
+      width: 960,
+			height: 700,
+			margin: 0.04,
+      minScale: 0.2,
+      maxScale: 2,
+      disableLayout: false,
+
+      audio: {
+        prefix: 'audio/', // audio files are stored in the "audio" folder
+        suffix: '.ogg', // audio files have the ".ogg" ending
+        textToSpeechURL: null, // the URL to the text to speech converter
+        defaultNotes: false, // use slide notes as default for the text to speech converter
+        defaultText: false, // use slide text as default for the text to speech converter
+        advance: 0, // advance to next slide after given time in milliseconds after audio has played, use negative value to not advance
+        autoplay: false, // automatically start slideshow
+        defaultDuration: 5, // default duration in seconds if no audio is available
+        defaultAudios: true, // try to play audios with names such as audio/1.2.ogg
+        playerOpacity: 0.05, // opacity value of audio player if unfocused
+        playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', // style used for container of audio controls
+        startAtFragment: false, // when moving to a slide, start at the current fragment or at the start of the slide
+      },
+      
+      chalkboard: { // font-awesome.min.css must be available
+        //src: "chalkboard/chalkboard.json",
+        storage: "chalkboard-demo",
+      },
+      
+			customcontrols: {
+					controls: [
+      						{
+						  id: 'toggle-overview',
+						  title: 'Toggle overview (O)',
+						  icon: '<i class="fa fa-th"></i>',
+						  action: 'Reveal.toggleOverview();'
+						}
+						,
+      {
+        icon: '<i class="fa fa-pen-square"></i>',
+        title: 'Toggle chalkboard (B)',
+        action: 'RevealChalkboard.toggleChalkboard();'
+      },
+      {
+        icon: '<i class="fa fa-pen"></i>',
+        title: 'Toggle notes canvas (C)',
+        action: 'RevealChalkboard.toggleNotesCanvas();'
+      }
+      
+				]
+			},
+			chart: {
+					defaults: { 
+						color: 'lightgray', // color of labels
+						scale: { 
+							beginAtZero: true, 
+							ticks: { stepSize: 1 },
+							grid: { color: "lightgray" } , // color of grid lines
+						},
+					},
+					line: { borderColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ], "borderDash": [ [5,10], [0,0] ] }, 
+					bar: { backgroundColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ]}, 
+					pie: { backgroundColor: [ ["rgba(0,0,0,.8)" , "rgba(220,20,20,.8)", "rgba(20,220,20,.8)", "rgba(220,220,20,.8)", "rgba(20,20,220,.8)"] ]},
+					radar: { borderColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ]}, 
+			},
+			math: {
+				mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+				config: 'TeX-AMS_HTML-full',
+				// pass other options into `MathJax.Hub.Config()`
+				TeX: { Macros: { RR: "{\\bf R}" } }
+				},
+				anything: [ 
+				{
+		className: "plot",
+		defaults: {width:500, height: 500, grid:true},
+		initialize: (function(container, options){ options.target = "#"+container.id; functionPlot(options) })
+	 },
+	 {
+		className: "chart",  
+		initialize: (function(container, options){ container.chart = new Chart(container.getContext("2d"), options);  })
+	 },
+	 {
+		className: "anything",
+		initialize: (function(container, options){ if (options && options.initialize) { options.initialize(container)} })
+	 },
+					],
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: (window.location.search.match(/print-pdf/gi) ? printPlugins : plugins ) 
+		});
+			
+
+
+	    // Change chalkboard theme : 
+		function changeTheme(input) {
+			var config = {};
+			config.theme = input.value;
+			Reveal.getPlugin("RevealChalkboard").configure(config);
+			input.blur();
+		}
+
+		// // Handle the message inside the webview
+        // window.addEventListener('message', event => {
+
+        //     const message = event.data; // The JSON data our extension sent
+
+        //     switch (message.command) {
+        //         case 'refactor':
+        //             Reveal.toggleHelp();
+        //     }
+        // });
+
+		if (window.location.search.match(/print-pdf-now/gi)) {
+      		setTimeout(() => {
+				window.print();
+			  }, 2500);
+			
+    }
+</script>
+
+</body>
+
+</html>
